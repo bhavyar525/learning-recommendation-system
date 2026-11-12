@@ -1,4 +1,4 @@
-# Cloud Data Engineering & Learning Recommendation Pipeline
+# Cloud Data Engineering & Learning Recommendation System
 
 ## Business Context / Problem
 Recommend next learning activities based on skills, prerequisites, assessment results, and content difficulty.
@@ -22,7 +22,21 @@ learning_recommendation_pipeline/
 ├── requirements.txt         # Dependencies list
 └── README.md                # Project documentation
 
-## How to Run the UI
-1. Install requirements: `pip install -r requirements.txt`
-2. Launch the dashboard: `streamlit run app.py`
-3. Open your browser at: `http://localhost:8501`
+Running the Application
+1. Install Dependencies
+pip install -r requirements.txt
+
+2. Generate Sample Data
+Run the synthetic data generator to create learner, skill, and assessment datasets.
+python src/generator.py
+
+3. Run Data Validation
+Validate data quality and business rules.
+python src/validator.py
+
+4. Launch the Streamlit Dashboard
+streamlit run app.py
+
+5. Access the Application
+Open your browser and navigate to:
+http://localhost:8501
