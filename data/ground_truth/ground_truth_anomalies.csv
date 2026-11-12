@@ -1,0 +1,4 @@
+anomaly_id,type,description,entity_id,ground_truth_label
+ANO-001,Prerequisite_Violation,Recommended advanced skill without completing prerequisite.,LRN-000001,Invalid_Recommendation
+ANO-002,Invalid_Timestamp_Order,Attempt timestamp occurs out of sequence.,ATT-LRN-000437-00000,Temporal_Error
+ANO-003,Orphaned_Content_Skill,Content item references a non-existent skill ID.,CNT-000001,Integrity_Violation
